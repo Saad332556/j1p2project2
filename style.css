@@ -2,7 +2,8 @@
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
 html {
@@ -49,31 +50,65 @@ html {
 }
 
 .inleiding {
-    background: url(img/gamingbackground.jpg)repeat fixed center;
+    background: url(img/14174.png)repeat fixed center;
     background-size: cover;
     height: 90vh;
 }
 
-.inleiding > .text1 {
-    padding-top: 13rem;
+.inleiding > .div {
+    position: absolute;
+    width: 53%;
+    border: 4px rgb(0, 0, 0);
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.74);
     text-align: center;
-    
-}
-
-.inleiding > .text1 > h1, h2 {
-    color: rgba(255, 52, 52, 0.925)
-}
-
-.inleiding > .text1 > p {
-    color: rgba(250, 111, 123, 0.849)
+    padding-top: 5rem;
+    margin-top: 14rem;
+    margin-left: 60rem;
+    transform: translate(-50%);
 }
 
 .button1 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(94, 69, 102);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: rgb(94, 69, 102);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+.button1:hover {
+    border: none;
+    background-color: rgb(94, 69, 102);
     color: white;
-    background-color: rgba(142, 84, 196, 0.867);
-    font-size: 13px;
-    padding: 8px 28px;
-    border-radius: 6px;
+    
+}
+
+a:link, a:visited,  a:hover, a:active {
+    color: white;
+    text-decoration: none;
 }
 
 
