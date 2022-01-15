@@ -18,9 +18,7 @@ html {
     position: sticky;
 }
 
-.topnav ul {
-    float: right;
-}
+.topnav ul { float: right; }
 
 .topnav a {
     float: left;
@@ -38,9 +36,8 @@ html {
     color: black;
 }
 
-.topnav .icon {
-    display: none;
-}
+
+.topnav .icon { display: none; }
 
 .topnav > img { 
     float: left;
@@ -49,13 +46,13 @@ html {
     max-width: 100%;
 }
 
-.inleiding {
+#inleiding {
     background: url(img/14174.png)repeat fixed center;
     background-size: cover;
     height: 90vh;
 }
 
-.inleiding > .div {
+#inleiding > .div {
     position: absolute;
     width: 53%;
     border: 4px rgb(0, 0, 0);
@@ -63,16 +60,16 @@ html {
     background: rgba(255, 255, 255, 0.74);
     text-align: center;
     padding-top: 5rem;
-    margin-top: 14rem;
-    margin-left: 60rem;
+    margin-top: 7rem;
+    margin-left: 47rem;
     transform: translate(-50%);
 }
 
 .button1 {
-    width: 200px;
-    padding: 15px 0;
+    width: 25%;
+    padding: 15px 5px;
     text-align: center;
-    margin: 20px 10px;
+    margin: 20px 10px 0;
     border-radius: 25px;
     font-weight: bold;
     border: 2px solid rgb(94, 69, 102);
@@ -95,15 +92,12 @@ span {
     transition: 0.5s;
 }
 
-button:hover span{
-    width: 100%;
-}
+button:hover span{ width: 100%; }
 
 .button1:hover {
     border: none;
     background-color: rgb(94, 69, 102);
     color: white;
-    
 }
 
 a:link, a:visited,  a:hover, a:active {
@@ -111,41 +105,6 @@ a:link, a:visited,  a:hover, a:active {
     text-decoration: none;
 }
 
-
-
-/* Media queries */
-
-/* navbar */
-@media screen and (max-width: 768px) {
-    .topnav a {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav ul,
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: center;
-    }
-}
-
-/* logo in de navbar */
-@media screen and (max-width: 768px) {
-    .topnav > img.responsive { height: 100px; width: 155px;}
-}
-
-#overons {
-
-}
 #overons .overons {
     flex-direction: column;
     text-align: center;
@@ -155,17 +114,17 @@ a:link, a:visited,  a:hover, a:active {
 }
 
 #overons .section-title {
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: 300;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
 }
 
 #overons .overons-top p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 300;
@@ -211,8 +170,202 @@ a:link, a:visited,  a:hover, a:active {
     width: 50px;
     margin-bottom: 20px;
 }
+
 #overons .overons-bottom .icon img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+#form {
+    background-color: #bebebe;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+#inschrijven {
+    width: 82%;
+    border: 2px solid black;
+    background-color: rgba(255, 249, 249, 0.575);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact1, #titel3 {
+    padding-top: 2.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+input[type=text], input[type=email], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #bb73fd;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-top: 1rem;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(129, 0, 180);
+    color: white;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 0rem;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-75 > #inputEvent {
+    height: 2rem; 
+    width: 100%; 
+    margin-top:0.3rem;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column1, .column2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.contact2 { 
+    margin-top: 1.5rem; 
+    margin-bottom: 1rem;
+}
+
+.column2, .contact3 { margin-bottom: 1rem; }
+
+a.link { color: rgb(92, 91, 91); }
+
+.column2, iframe {
+    text-align: center;
+    padding-left: 2rem;
+}
+
+/* styling voor de php bestanden */
+body.create { background-color: rgb(231, 220, 220); }
+
+h3.notif_message1, h3.notif_message2 { text-align: center; }
+
+h3.notif_message1 { margin-bottom: 2rem; }
+
+body.read { background-color: rgb(224, 223, 223); }
+
+tr:nth-child(even) { background-color: #f2f2f2; }
+
+table {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
+
+tr { border-bottom: 1pt solid black; }
+
+/* Media queries */
+
+/* navbar */
+@media screen and (max-width: 768px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav ul,
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+}
+
+/* logo in de navbar */
+@media screen and (max-width: 768px) {
+    .topnav > img.responsive { height: 100px; width: 155px;}
+}
+
+/* inleiding */
+@media screen and (min-width: 357px) and (max-width: 768px) {
+    #inleiding > .div {
+        width: 57%;
+        padding: 3rem;
+        padding-top: 3rem;
+        margin-top: 2rem;
+        margin-left: 11.5rem;
+    }
+    .button1 {
+        width: 55%;
+        padding: 15px 5px;
+        margin: 20px 10px 0;
+        border-radius: 25px;
+        background: rgb(94, 69, 102);;
+    }
+}
+
+/* formulier */
+/* Responsive layout - when the screen is less than 600px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 40%;
+      margin-top: 0;
+    }
+    input[type=submit] {
+        padding: 15px 20px;
+        margin-left: 13.5rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+    
 }
